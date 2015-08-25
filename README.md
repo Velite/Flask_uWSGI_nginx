@@ -2,12 +2,11 @@
 
 <h3>Настройка сервера:</h3>
 <ol>
-  <li>Обновляемся: sudo apt-get update</li>
-  <li>Ставим утилиты: sudo apt-get install nginx-full uwsgi uwsgi-plugin-python3 python3-pip, возможно ещё: python3 python3-dev python3-setuptools - возможно, нужно будет дополнить список репозиториев, чтобы был доступен uwsgi</li>
-  <li>Устанавливаем инструменты для виртуального окружения: <pre>sudo pip3 install virtualenv или sudo easy_install-3.4 virtualenv</pre></li>
+  <li>Обновляемся:<pre>sudo apt-get update</pre></li>
+  <li>Ставим утилиты:<pre>sudo apt-get install nginx-full uwsgi uwsgi-plugin-python3 python3-pip</pre>, возможно ещё:<pre>python3 python3-dev python3-setuptools</pre>возможно, нужно будет дополнить список репозиториев, чтобы был доступен uwsgi</li>
+  <li>Устанавливаем инструменты для виртуального окружения:<pre>sudo pip3 install virtualenv или sudo easy_install-3.4 virtualenv</pre></li>
+  <li>Создаём папку для проекта</li>
 </ol>
-3. 
-4. Создаём папку для проекта
 5. Заходим в неё и настраиваем виртуальное окружение: virtualenv <имя_папки_для_вирт_среды>
 6. Активируем окружение: source /<папка_проекта>/<папка_вирт_среды>/bin/activate
 7. Находясь в вирт. среде ставим инструменты: pip3 install flask, после этого выходим через deactivate
