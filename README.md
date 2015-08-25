@@ -8,9 +8,9 @@
   <li>Создаём папку для проекта</li>
   <li>Заходим в неё и настраиваем виртуальное окружение:<pre>virtualenv <имя_папки_для_вирт_среды></pre></li>
   <li>Активируем окружение:<pre>source /<папка_проекта>/<папка_вирт_среды>/bin/activate</pre></li>
+  <li>Находясь в вирт. среде ставим инструменты:<pre>pip3 install flask</pre>после этого выходим через<pre>deactivate</pre></li>
+  <li>В папке проекта создаём файл проекта, например app.py, <strong style="color: red">не называть flask.py!</strong></li>
 </ol>
-7. Находясь в вирт. среде ставим инструменты: pip3 install flask, после этого выходим через deactivate
-8. В папке проекта создаём файл проекта, например app.py, не называть flask.py!
 9. В созданном файле набиваем простой тестовый код flask
 10. Заходим в папку /etc/nginx/sites-available
 11. Создаём новый конфиг, например <a href="https://raw.githubusercontent.com/Velite/Flask_uWSGI_nginx/master/flask.conf">flask.conf</a>
