@@ -4,8 +4,9 @@
 <ol>
   <li>Обновляемся: sudo apt-get update</li>
   <li>Ставим утилиты: sudo apt-get install nginx-full uwsgi uwsgi-plugin-python3 python3-pip, возможно ещё: python3 python3-dev python3-setuptools - возможно, нужно будет дополнить список репозиториев, чтобы был доступен uwsgi</li>
+  <li>Устанавливаем инструменты для виртуального окружения: <pre>sudo pip3 install virtualenv или sudo easy_install-3.4 virtualenv</pre></li>
 </ol>
-3. Устанавливаем инструменты для виртуального окружения: sudo pip3 install virtualenv или sudo easy_install-3.4 virtualenv
+3. 
 4. Создаём папку для проекта
 5. Заходим в неё и настраиваем виртуальное окружение: virtualenv <имя_папки_для_вирт_среды>
 6. Активируем окружение: source /<папка_проекта>/<папка_вирт_среды>/bin/activate
