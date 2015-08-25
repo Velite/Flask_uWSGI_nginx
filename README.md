@@ -3,12 +3,12 @@
 <h3>Настройка сервера:</h3>
 <ol>
   <li>Обновляемся:<pre>sudo apt-get update</pre></li>
-  <li>Ставим утилиты:<pre>sudo apt-get install nginx-full uwsgi uwsgi-plugin-python3 python3-pip</pre>, возможно ещё:<pre>python3 python3-dev python3-setuptools</pre>возможно, нужно будет дополнить список репозиториев, чтобы был доступен uwsgi</li>
+  <li>Ставим утилиты:<pre>sudo apt-get install nginx-full uwsgi uwsgi-plugin-python3 python3-pip</pre>возможно ещё:<pre>python3 python3-dev python3-setuptools</pre>возможно, нужно будет дополнить список репозиториев, чтобы был доступен uwsgi</li>
   <li>Устанавливаем инструменты для виртуального окружения:<pre>sudo pip3 install virtualenv или sudo easy_install-3.4 virtualenv</pre></li>
   <li>Создаём папку для проекта</li>
+  <li>Заходим в неё и настраиваем виртуальное окружение:<pre>virtualenv <имя_папки_для_вирт_среды></pre></li>
+  <li>Активируем окружение:<pre>source /<папка_проекта>/<папка_вирт_среды>/bin/activate</pre></li>
 </ol>
-5. Заходим в неё и настраиваем виртуальное окружение: virtualenv <имя_папки_для_вирт_среды>
-6. Активируем окружение: source /<папка_проекта>/<папка_вирт_среды>/bin/activate
 7. Находясь в вирт. среде ставим инструменты: pip3 install flask, после этого выходим через deactivate
 8. В папке проекта создаём файл проекта, например app.py, не называть flask.py!
 9. В созданном файле набиваем простой тестовый код flask
