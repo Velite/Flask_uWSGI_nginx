@@ -11,7 +11,7 @@
 8. В папке проекта создаём файл проекта, например app.py, не называть flask.py!
 9. В созданном файле набиваем простой тестовый код flask
 10. Заходим в папку /etc/nginx/sites-available
-11. Создаём новый конфиг, например flask.conf
+11. Создаём новый конфиг, например <a href="https://raw.githubusercontent.com/Velite/Flask_uWSGI_nginx/master/flask.conf">flask.conf</a>
 12. Создаём для него символическую ссылку в папке sites-enabled: sudo ln -s /etc/nginx/sites-available/flask.conf /etc/nginx/sites-enabled/flasc.conf
 13. Если имеется символическая ссылка типа default, то удаляем её: sudo rm /etc/nginx/sites-enabled/default
 14. Заходим в папку /etc/uwsgi/apps-available и создаём там новый файл, например flask.ini или flask.json - проверить права на папки/файлы/сокет
