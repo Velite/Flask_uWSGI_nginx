@@ -11,9 +11,10 @@
   <li>Находясь в вирт. среде ставим инструменты:<pre>pip3 install flask</pre>после этого выходим через<pre>deactivate</pre></li>
   <li>В папке проекта создаём файл проекта, например <a href="https://raw.githubusercontent.com/Velite/Flask_uWSGI_nginx/master/app.py">app.py</a>, <strong>не называть flask.py!</strong></li>
   <li>В созданном файле набиваем простой <a href="https://raw.githubusercontent.com/Velite/Flask_uWSGI_nginx/master/app.py">тестовый код flask</a></li>
+  <li>Заходим в папку /etc/nginx/sites-available</li>
+  <li>Создаём новый конфиг, например <a href="https://raw.githubusercontent.com/Velite/Flask_uWSGI_nginx/master/flask.conf">flask.conf</a></li>
 </ol>
-10. Заходим в папку /etc/nginx/sites-available
-11. Создаём новый конфиг, например <a href="https://raw.githubusercontent.com/Velite/Flask_uWSGI_nginx/master/flask.conf">flask.conf</a>
+ 
 12. Создаём для него символическую ссылку в папке sites-enabled: sudo ln -s /etc/nginx/sites-available/flask.conf /etc/nginx/sites-enabled/flask.conf
 13. Если имеется символическая ссылка типа default, то удаляем её: sudo rm /etc/nginx/sites-enabled/default
 14. Заходим в папку /etc/uwsgi/apps-available и создаём там новый файл, например <a href="https://raw.githubusercontent.com/Velite/Flask_uWSGI_nginx/master/flask.ini">flask.ini</a> или flask.json - проверить права на папки/файлы/сокет
