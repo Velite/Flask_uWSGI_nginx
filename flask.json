@@ -1,0 +1,21 @@
+{"uwsgi": {
+  "plugins": "python3",
+  "socket": ["/tmp/%n.sock"],
+  "vhost": true,
+  "vacuum": true,
+  "master": true,
+  "workers": 2,
+  "processes": 4,
+  "threads": 4,
+  "enable-threads": true,
+  "harakiri": 30,
+  "die-on-term": true,
+  "dir_plh": "/home/velite/test1",
+  "virtualenv": "%(dir_plh)/env/",
+  "home": "%(dir_plh)/env",
+  "pythonpath": "%(dir_plh)",
+  "chdir": "%(dir_plh)",
+  "callable": "app",  
+  "wsgi-file": "app.py"
+ }
+}
